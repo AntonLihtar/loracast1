@@ -1,0 +1,25 @@
+# IDE и редакторы
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Зависимости PHP
+/vendor/
+
+# Логи и кэш
+*.log
+/var/
+/bootstrap/cache/
+
+# Конфигурация и секреты
+.env
+.env.local
+.env.*.local
+
+# Системные файлы
+.DS_Store
+Thumbs.db
