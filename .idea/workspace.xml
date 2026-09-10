@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cf21b20f-2508-4e8e-9431-a117b3879f37" name="Changes" comment="создал класс конфиг для подключения к mysql базе и отредачил">
+      <change afterPath="$PROJECT_DIR$/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arhived.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/note.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/notes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/403.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/note.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/notes.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +30,14 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="a956f04a-6c5d-43e4-8049-c0d42c180590" value="" />
+    </colors>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="22" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -26,40 +48,58 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AntonLihtar"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AntonLihtar&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:AntonLihtar/loracast1.git",
-    "accountId": "c8c050dd-d165-47c1-a0a2-68f30a4b2249"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:AntonLihtar/loracast1.git&quot;,
+    &quot;accountId&quot;: &quot;c8c050dd-d165-47c1-a0a2-68f30a4b2249&quot;
   }
-}]]></component>
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:/php/php.exe" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="3IotfOytQSjjvibLJkX0j01Ntcc" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl.localhost/Ubuntu/home/ant/projects/demo/views&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\ant\projects\demo\views" />
+      <recent name="\\wsl.localhost\Ubuntu\home\ant\projects\demo\controllers" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -75,7 +115,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1788442851977</updated>
-      <workItem from="1788442853021" duration="3853000" />
+      <workItem from="1788442853021" duration="7297000" />
+      <workItem from="1788778171635" duration="1641000" />
+      <workItem from="1788810260813" duration="676000" />
+      <workItem from="1788848236400" duration="107000" />
+      <workItem from="1788848661238" duration="1406000" />
+      <workItem from="1788850087185" duration="4160000" />
+      <workItem from="1788937033634" duration="23037000" />
+      <workItem from="1789047375170" duration="3664000" />
     </task>
     <task id="LOCAL-00001" summary="создал класс конфиг для подключения к mysql базе и отредачил">
       <option name="closed" value="true" />
@@ -85,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788447153149</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="создал класс конфиг для подключения к mysql базе и отредачил">
+      <option name="closed" value="true" />
+      <created>1788447325598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1788447325598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +149,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="создал класс конфиг для подключения к mysql базе и отредачил" />
     <option name="LAST_COMMIT_MESSAGE" value="создал класс конфиг для подключения к mysql базе и отредачил" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

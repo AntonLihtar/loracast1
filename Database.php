@@ -3,6 +3,8 @@
 class Database {
     public $connection;
 
+    public $statement;
+
     public function __construct($config, $username, $password) {
 
         // Формируем строку подключения (DSN) из массива настроек.
@@ -18,15 +20,34 @@ class Database {
         ]);
     }
 
-    public function query($query) {
+    public function query($query, $params = []) {
         // Подготавливаем SQL-запрос к выполнению
-        $statement = $this->connection->prepare($query);
+        $this->statement = $this->connection->prepare($query);
 
         // Выполняем подготовленный запрос
-        $statement->execute();
+        $this->statement->execute($params);
 
         // Возвращаем PDOStatement.
         // После этого можно, например, вызвать fetch() или fetchAll().
-        return $statement;
+        return $this;
     }
+
+    public function get() {
+        return $this->statement->fetchAll();
+    }
+
+    public function find() {
+        return $this->statement->fetch();
+    }
+
+    public function findOrFail() {
+
+        $result = $this->find();
+        if (!$result) {
+            abort();
+        }
+        return $result;
+    }
+
+
 }
