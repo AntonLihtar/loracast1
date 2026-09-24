@@ -48,6 +48,4 @@ class Database {
         }
         return $result;
     }
-
-
 }
