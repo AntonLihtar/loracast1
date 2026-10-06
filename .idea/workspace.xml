@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf21b20f-2508-4e8e-9431-a117b3879f37" name="Changes" comment="написал методы получения заметок и заметки, авторизая пользователя">
-      <change afterPath="$PROJECT_DIR$/controllers/note-create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/note-create.view.php" afterDir="false" />
+    <list default="true" id="cf21b20f-2508-4e8e-9431-a117b3879f37" name="Changes" comment="хз что и написал">
+      <change afterPath="$PROJECT_DIR$/Validator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/notes/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/notes/create.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/notes.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/notes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/notes.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/notes.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/note-create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/note.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/notes/show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/notes.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/notes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/note-create.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/note.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/notes/show.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/notes.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/notes/index.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,7 @@
     </colors>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="22" />
+    <option name="cachedIndexableFilesCount" value="41" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,7 +54,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:AntonLihtar/loracast1.git&quot;,
-    &quot;accountId&quot;: &quot;c8c050dd-d165-47c1-a0a2-68f30a4b2249&quot;
+    &quot;accountId&quot;: &quot;74f1ee9c-46dd-4b3c-b713-8168b55f6837&quot;
   }
 }</component>
   <component name="McpProjectServerCommands">
@@ -75,15 +77,21 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "PHP Script.i.php.executor": "Run",
     "PHP Script.notes.php.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "//wsl.localhost/Ubuntu/home/ant/projects/demo/views",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets.lang"
+    "settings.editor.selected.configurable": "preferences.rainbow.brackets.lang",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -97,26 +105,23 @@
       <recent name="\\wsl.localhost\Ubuntu\home\ant\projects\demo\controllers" />
       <recent name="\\wsl.localhost\Ubuntu\home\ant\projects\demo" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\ant\projects\demo\views\notes" />
+      <recent name="\\wsl.localhost\Ubuntu\home\ant\projects\demo\controllers\notes" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Script.i.php">
     <configuration name="i.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/i.php">
       <method v="2" />
     </configuration>
-    <configuration name="notes.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/controllers/notes.php">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/controllers/notes/index.php">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="PHP Script.i.php" />
-        <item itemvalue="PHP Script.notes.php" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PS-262.8665.265" />
-        <option value="bundled-php-predefined-a98d8de5180a-ff90ddd8021d-com.jetbrains.php.sharedIndexes-PS-262.8665.265" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
       </set>
     </attachedChunks>
   </component>
@@ -139,7 +144,11 @@
       <workItem from="1788937033634" duration="23037000" />
       <workItem from="1789047375170" duration="5319000" />
       <workItem from="1789127241430" duration="6834000" />
-      <workItem from="1790243284633" duration="6376000" />
+      <workItem from="1790243284633" duration="9755000" />
+      <workItem from="1790582158015" duration="14193000" />
+      <workItem from="1791194125644" duration="48000" />
+      <workItem from="1791194273928" duration="3939000" />
+      <workItem from="1791201298533" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="создал класс конфиг для подключения к mysql базе и отредачил">
       <option name="closed" value="true" />
@@ -165,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789052101461</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="хз что и написал">
+      <option name="closed" value="true" />
+      <created>1790277200996</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790277200996</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +191,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="создал класс конфиг для подключения к mysql базе и отредачил" />
     <MESSAGE value="написал методы получения заметок и заметки, авторизая пользователя" />
-    <option name="LAST_COMMIT_MESSAGE" value="написал методы получения заметок и заметки, авторизая пользователя" />
+    <MESSAGE value="хз что и написал" />
+    <option name="LAST_COMMIT_MESSAGE" value="хз что и написал" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
